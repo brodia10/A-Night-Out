@@ -2,21 +2,21 @@
 
 A Night Out is a retro style choose-your-own-ending terminal-based game, available for Mac, Windows, and Linux.
 
-# Installation
+## Installation
 
-## Clone this repo <br />
+### Clone this repo <br />
 `git clone https://github.com/brodia10/A-Night-Out`
 
-## Create a virtualenv <br />
+### Create a virtualenv <br />
 `virtualenv myenv -p python3`
 
-## Activate virtualenv <br />
+### Activate virtualenv <br />
 `source myenv/bin/activate`
 
-## Install requirements <br />
+### Install requirements <br />
 `pip install -r requirements.txt`
 
-## Run the game! <br />
+### Run the game! <br />
 `python main.py`
 
 Screenshots:
