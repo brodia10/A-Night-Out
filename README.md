@@ -1,4 +1,4 @@
 # A-Night-Out
 
-A Night Out is a retro style choose-your-own-ending terminal-based game, available on Mac, Windows, and Linux.
+A Night Out is a retro style choose-your-own-ending terminal-based game, available for Mac, Windows, and Linux.
 
