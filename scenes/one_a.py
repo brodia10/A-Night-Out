@@ -41,6 +41,6 @@ img = """
 
        """
 choices = {
-    "a": {"choice": "Ok I will go... only for a little bit.", "img": ""},
-    "b": {"choice": "I'm not feeling it tonight.", "img": ""},
+    "a": {"choice": "Ok I will go... only for a little bit.", "img": img},
+    "b": {"choice": "I'm not feeling it tonight.", "img": img},
 }

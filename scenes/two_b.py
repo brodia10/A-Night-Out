@@ -13,7 +13,31 @@ He Panics and goes into the bathroom to wash his face only to find a odd pentagr
 Jake not knowing what to do picks up the knife to examine it. With knife in hand The police break down his door and yell you are under arrest put the knife down. Confused Jake doesn't know what to do.
 """
 
+img = """
+   _______________________________________________________
+                      \      __      /         __
+                       \_____()_____/         /  )
+                       '============`        /  /
+                        #---\  /---#        /  /
+                       (# @\| |/@  #)      /  /
+                        \   (_)   /       /  /
+                        |\ '---` /|      /  /
+                _______/ \\_____// \____/ o_|
+               /       \  /     \  /   / o_|
+              / | DICK FART o|        / o_| \
+             /  |  _____     |       / /   \ \
+            /   |  |===|    o|      / /\    \ \
+           |    |   \@/      |     / /  \    \ \
+           |    |___________o|__/----)   \    \/
+           |    '              ||  --)    \     |
+           |___________________||  --)     \    /
+                |           o|   ''''   |   \__/
+                |            |          |
+         'DROP THE KNIFE! DON'T CROSS ME JAKE... !'
+___________________________________________________________
+"""
+
 choices = {
-    "1": {"choice": "Confront the officer", "img": ""},
-    "2": {"choice": "Run out the window", "img": ""},
+    "1": {"choice": "Confront the officer", "img": img},
+    "2": {"choice": "Run out the window", "img": img},
 }

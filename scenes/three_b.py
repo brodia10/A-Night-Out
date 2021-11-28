@@ -5,7 +5,20 @@ Bethany during the drive mentions that she has seen him around and always wanted
 
 """
 
+
+img = """
+   ---------------------------.
+ `/""""/""""/|""|'|""||""|   ' \.
+ /    /    / |__| |__||__|      |
+/----------=====================|
+| \  /V\  /    _.  OnlyFans     |
+|()\ \W/ /()   _@ItsBethanyBitch|
+|   \   /     / \          / \  |-( )
+=C========C==_| ) |--------| ) _/==] _-{_}_)
+ \_\_/__..  \_\_/_ \_\_/ \_\_/__.__.
+
+"""
 choices = {
-    "1": {"choice": "Keep small talk", "img": ""},
-    "2": {"choice": "Stay silent until arrival at destination", "img": ""},
+    "a": {"choice": "Keep small talk", "img": img},
+    "b": {"choice": "Stay silent until arrival at destination", "img": img},
 }

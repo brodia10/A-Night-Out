@@ -13,7 +13,55 @@ Cop looks at jake and says before he dies. This had to be done it was the only w
 Jakes dies
 """
 
+
+img = """
+                    .-=====-.
+                    | .   . |
+                    | |   | |
+                    | |   | |
+                    | '---' |
+                    |       |
+                    |       |
+ .-================-'       '-================-.
+j|  _                                          |
+g|.'o\        JAKE DIES FOR OUR SINS      __   |
+s| '-.'.                                .'o.`  |
+ '-==='.'.=========-.       .-========.'.-'===-'
+        '.`'._    .===,     |     _.-' /
+          '._ '-./  ,//\   _| _.-'  _.'
+             '-.| ,//'  \-'  `   .-'
+                `//'_`--;    ;.-'
+                  `\._ ;|jake|
+                     \`-'  . |
+                     |_.-'-._|
+                     \  _'_  /
+                     |; -:- |
+                     || -.- \
+                     |;     .\
+                     / `'\'`\-;
+                    ;`   '. `_/
+                    |,`-._;  .;
+                    `;\  `.-'-;
+                     | \   \  |
+                     |  `\  \ |
+                     |   )  | |
+                     |  /  /` /
+                     | |  /|  |
+                     | | / | /
+                     | / |/ /|
+                     | \ / / |
+                     |  /o | |
+                     |  |_/  |
+                     |       |
+                     |       |
+                     |       |
+                     |       |
+                     |       |
+                     |       |
+                     |       |
+                     '-=====-'
+"""
 choices = {
-    "1": {"choice": "Keep small talk", "img": ""},
-    "2": {"choice": "Stay silent until arrival at destination", "img": ""},
+    "a": {"choice": "Keep small talk", "img": img},
+    "b": {"choice": "Stay silent until arrival at destination", "img": img},
 }
