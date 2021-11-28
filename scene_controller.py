@@ -1,50 +1,51 @@
-from time import sleep
-from console_writer import ConsoleWriter as console
+from console_writer import ConsoleWriter
+
+console = ConsoleWriter()
 
 
 class SceneController:
-    """Controls how and when each scene get's played based on user input."""
-    def validate_user_input(self,game_control, prompt='Choose 1 or 2: '):
-        """ Checks if user input is equal to a game_control.
-        Used to determine which scene to que next. """
+    """
+    This Class defines methods for determining:
+        - when and how to start a scene
+        - which scene should be played next based off of user input
+    """
+
+    def user_input_is_valid(self, prompt=""):
+        """ Checks that user input matches game controls: 1 or 2. Optionally displays a prompt."""
         while True:
             try:
-                choice = str(input(prompt))
-            except ValueError:
-                print("Oops looks like you fat-fingered it, try '1' or '2'.")
+                user_input = input(prompt)
+                if user_input == "1" or user_input == "2":
+                    return user_input
+            except ValueError as e:
+                print(e)
                 continue
-            else:
-                break
-        if choice == game_control:
-            return True
-        return False
 
-    def que_next_scene(self, current_scene, next_scene_a, next_scene_b):
-        choices = {
-            "a": {
-                "choice": current_scene.choices["a"]["choice"],
-                "img": current_scene.choices["a"]["img"],
-            },
-            "b": {
-                "choice": current_scene.choices["b"]["choice"],
-                "img": current_scene.choices["b"]["img"],
-            },
-        }
+    def start(self, current_scene, next_scene_a, next_scene_b):
+        """Takes the current scene, and the two possible next scenes. Starts the next scene based on user input. """
+        # TODO: add audio parameter for playing the scene's theme music
 
-        if self.validate_user_input("a"):
-            selected_choice = choices.a.choice
-            console.write(selected_choice)
-            sleep(2)
+        # Map choices to scene choices
+        choice_a = current_scene.choices["a"]
+        choice_b = current_scene.choices["b"]
+
+        # Play current scene
+        console.write(current_scene.msg)
+        console.write(current_scene.img, effect=False)
+
+        # Display prompt and validate user input
+        input = self.user_input_is_valid(
+            f"""[1] {choice_a['choice']} \n[2] {choice_b['choice']} \nJake chooses: """
+        )
+
+        # Play next scene msg and img based on user input.
+        if input == "1":
+            console.write(choice_a["img"], effect=False)
+            console.write(choice_a["choice"])
             console.clear()
-            console.write(next_scene_a.img, False)
             console.write(next_scene_a.msg)
-        elif self.validate_user_input("b"):
-            selected_choice = choices.b.choice
-            console.write(selected_choice)
-            sleep(2)
-            console.clear()
-            console.write(next_scene_b.img, False)
-            console.write(next_scene_b.msg)
         else:
-            "Please enter a valid choice, 1 or 2"
-            self.que_next_scene(current_scene, next_scene_a, next_scene_b)
+            console.write(choice_b["img"], effect=False)
+            console.write(choice_b["choice"])
+            console.clear()
+            console.write(next_scene_b.msg)

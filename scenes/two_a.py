@@ -25,7 +25,25 @@ Bethany looks at jake and says
 Both Jake and Scott look at each other to decide if they wanna go.
 """
 
+img = """
+     ....,       ,....
+.' ,,, '.   .' ,,, '.
+ .`   `.     .`   `.
+: ..... :   : ..... :
+:`~'-'-`:   :`-'-'~`:
+ `.~-`.'     `.~`'.'
+   ```   ___   ```
+       ( . . )
+
+        .._..
+      .'     '.   Watchu think...?
+     `.~~~~~~~.`
+       `-...-`
+
+
+"""
+
 choices = {
-    "1": {"choice": "Go with her alone", "img": ""},
-    "2": {"choice": "Go with Scott", "img": ""},
+    "a": {"choice": "Go with her alone", "img": img},
+    "b": {"choice": "Go with Scott", "img": img},
 }
