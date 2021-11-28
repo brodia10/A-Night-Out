@@ -14,6 +14,6 @@ Jakes dies
 """
 
 choices = {
-    "1": {"choice": "Keep small talk", "image": ""},
-    "2": {"choice": "Stay silent until arrival at destination", "image": ""},
+    "1": {"choice": "Keep small talk", "img": ""},
+    "2": {"choice": "Stay silent until arrival at destination", "img": ""},
 }

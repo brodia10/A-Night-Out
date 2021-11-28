@@ -14,6 +14,6 @@ Jake not knowing what to do picks up the knife to examine it. With knife in hand
 """
 
 choices = {
-    "1": {"choice": "Confront the officer", "image": ""},
-    "2": {"choice": "Run out the window", "image": ""},
+    "1": {"choice": "Confront the officer", "img": ""},
+    "2": {"choice": "Run out the window", "img": ""},
 }
