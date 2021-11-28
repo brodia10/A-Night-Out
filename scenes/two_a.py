@@ -26,6 +26,6 @@ Both Jake and Scott look at each other to decide if they wanna go.
 """
 
 choices = {
-    "1": {"choice": "Go with her alone", "image": ""},
-    "2": {"choice": "Go with Scott", "image": ""},
+    "1": {"choice": "Go with her alone", "img": ""},
+    "2": {"choice": "Go with Scott", "img": ""},
 }

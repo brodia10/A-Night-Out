@@ -6,6 +6,6 @@ Bethany during the drive mentions that she has seen him around and always wanted
 """
 
 choices = {
-    "1": {"choice": "Keep small talk", "image": ""},
-    "2": {"choice": "Stay silent until arrival at destination", "image": ""},
+    "1": {"choice": "Keep small talk", "img": ""},
+    "2": {"choice": "Stay silent until arrival at destination", "img": ""},
 }

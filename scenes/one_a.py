@@ -1,4 +1,3 @@
-
 msg = """
 Scene opens up to a first person POV with a Character Named JAKE who will not talk.
 
@@ -15,7 +14,7 @@ Jake looks at the text with dread because he knows his friends always guilt him 
 Scene pause Choice decisions on screen
 Jake looks at this phone with two decisions
 """
-image = """
+img = """
 
              _.-----------._
           .-'      __       `-.
@@ -42,6 +41,6 @@ image = """
 
        """
 choices = {
-    "a": {"choice": "Ok I will go... only for a little bit.", "image": ""},
-    "b": {"choice": "I'm not feeling it tonight.", "image": ""},
+    "a": {"choice": "Ok I will go... only for a little bit.", "img": ""},
+    "b": {"choice": "I'm not feeling it tonight.", "img": ""},
 }
